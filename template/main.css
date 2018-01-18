@@ -1,7 +1,8 @@
-#demso{
-    /* position:absolute;
-    margin-bottom: 500px; */
-    
+body {
+    background: url("images/myPic.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: lighten;
 }
-
-
