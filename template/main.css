@@ -9,5 +9,9 @@ body {
 .main-content{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400px;
-    margin-top: 15%;
+    margin-top: 10%;
+}
+
+.log-in{
+    margin-left: 10px;
 }
