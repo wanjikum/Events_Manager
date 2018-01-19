@@ -35,9 +35,11 @@ body.index-page{
 }
 
 .login-form{
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .sign-in-btn {
-    margin-left: 4%;
+    margin-left: 1.5%;
+    width:47.5% !important;
+    
 }
