@@ -38,14 +38,6 @@ body.index-page{
     margin-top: 5%;
 }
 
-.log-in-btns {
-    margin-left: 1.5%;
-}
-
-.textInSeparator{
-    background-color: #fff;
-    padding: 0 .5em;
-    position: relative;
-    color: #999;
-    top: -.7em;
+.sign-in-btn {
+    margin-left: 4%;
 }
