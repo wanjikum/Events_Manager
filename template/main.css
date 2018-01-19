@@ -1,4 +1,4 @@
-body {
+body.index-page{
     background: url("images/myPic.jpeg") rgba(0, 0, 0, 0.1) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -24,4 +24,8 @@ body {
     background-color:black;
     color: white;
     text-align: center;
+}
+
+#terms-and-conditions{
+    color:dodgerblue;
 }
