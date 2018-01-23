@@ -7,41 +7,107 @@
         <title>Millicent's facilities</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link href="main.css" rel="stylesheet">
     </head>
     <body class="user-dashboard">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Milly's facilities</a>
+                    <a class="navbar-brand" href="index.html" id="">Milly's facilities</a>
                 </div>
-                <ul class="nav navbar-nav">
+                <!-- <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Facilities</a></li>
-                </ul>
+                </ul> -->
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
                 </ul>
             </div>
-              </nav>
-        <div class="col-sm-3">
-            <div class="navabar navbar-inverse">
-                <ul class="nav nav-tabs nav-stacked">
-                    <li>
-                        <a href="#">Dashboard</a>
-                        <a href="#">Facilities</a>
-                        <a href="#">Add Events</a>
-                        <a href="#">View Events</a>
-                    </li>
-                </ul>
+        </nav>
+        <div class="container-fluid">
+            <div class="col-sm-3">
+                <div class="navbar navbar-inverse">
+                    <ul class="nav nav-tabs nav-stacked nav-sidebar">
+                        <li>
+                            <a href="#" class="active sidebar-content">View Events</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar-content">Book Events</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        
+            <div class="col-sm-9">
+                <table class="table table-hover table-responsive table-bordered table-condensed events-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Event Name</th>
+                            <th>Location</th>
+                            <th>Time</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></td>
+                            <td><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></td>
+                            <td><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></td>
+                            <td><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></td>
+                                <td><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></td>
+                                <td><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></td>
+                                <td><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
 
+        </div>
         <footer class="footer">
             <span class="text-white text-center">Designed with <i class="fa fa-heart"></i> by Millicent</span>
         </footer>
     </body>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    
 </html>
